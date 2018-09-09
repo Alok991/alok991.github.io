@@ -254,6 +254,34 @@ unknown, so the Bayes classifier is most often unattainable.
 
 Naive Bayes algorithm is called naive because It makes an assumption that the occurence of a certain feature is independent of other feature, which is not true most of the time. Mathematically All features are independent of each other 
 
+$$ P\left ( c\mid x \right ) = \frac{P\left ( x\mid c \right ) P\left ( c \right )}{P\left ( x \right )} $$
+
+    * P(c|x) is the posterior probability of class (c, target) given predictor (x, attributes).
+    * P(c) is the prior probability of class.
+    * P(x|c) is the likelihood which is the probability of predictor given class.
+    * P(x) is the prior probability of predictor.
+
+Example Calculation :
+![Data Table](images/naive_bayes_data_table.png?raw=true "Data")
+
+Step 1: Convert the data set into a frequency table
+Step 2: Create Likelihood table by finding the probabilities like Overcast probability = 0.29 and probability of playing is 0.64.
+Step 3: Now, use Naive Bayesian equation to calculate the posterior probability for each class. The class with the highest posterior probability is the outcome of prediction.
+
+Problem: Players will play if weather is sunny. Is this statement is correct?
+
+We can solve it using above discussed method of posterior probability.
+
+P(Yes | Sunny) = P( Sunny | Yes) * P(Yes) / P (Sunny)
+
+Here we have P (Sunny |Yes) = 3/9 = 0.33, P(Sunny) = 5/14 = 0.36, P( Yes)= 9/14 = 0.64
+
+Now, P (Yes | Sunny) = 0.33 * 0.64 / 0.36 = 0.60, which has higher probability.
+
+
+Pros Of Naive Bayes
+
+
 ##### K-Nearest Neighbors
 
 Many modeling techniques try to compute the conditional distribution of $$ Y $$
