@@ -264,19 +264,19 @@ $$ P\left ( c\mid x \right ) = \frac{P\left ( x\mid c \right ) P\left ( c \right
 Example Calculation :
 ![Data Table](images/naive_bayes_data_table.png?raw=true "Data")
 
-Step 1: Convert the data set into a frequency table
-Step 2: Create Likelihood table by finding the probabilities like Overcast probability = 0.29 and probability of playing is 0.64.
-Step 3: Now, use Naive Bayesian equation to calculate the posterior probability for each class. The class with the highest posterior probability is the outcome of prediction.
+* Convert the data set into a frequency table
+* Create Likelihood table by finding the probabilities like Overcast probability = 0.29 and probability of playing is 0.64.
+* Now, use Naive Bayesian equation to calculate the posterior probability for each class. The class with the highest posterior probability is the outcome of prediction.
 
 Problem: Players will play if weather is sunny. Is this statement is correct?
 
 We can solve it using above discussed method of posterior probability.
 
-P(Yes | Sunny) = P( Sunny | Yes) * P(Yes) / P (Sunny)
+$$ P\left ( yes\mid sunny \right ) = \frac{P\left ( sunny\mid yes \right ) P\left ( yes \right )}{P\left ( sunny \right )}$$
 
-Here we have P (Sunny |Yes) = 3/9 = 0.33, P(Sunny) = 5/14 = 0.36, P( Yes)= 9/14 = 0.64
+Here we have $$P\left ( sunny\mid yes \right )$$ = 3/9 = 0.33, P(Sunny) = 5/14 = 0.36, P( Yes)= 9/14 = 0.64
 
-Now, P (Yes | Sunny) = 0.33 * 0.64 / 0.36 = 0.60, which has higher probability.
+Now, $$P\left ( yes\mid sunny \right )$$ = 0.33 * 0.64 / 0.36 = 0.60, which has higher probability.
 
 
 Pros Of Naive Bayes
