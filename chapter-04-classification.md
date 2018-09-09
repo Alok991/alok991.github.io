@@ -150,6 +150,12 @@ handling multiple-class classification.
 
 ### Linear Discriminant Analysis
 
+* _Note_ : There are different classifiers based on discriminate rules. 
+The one mentioned below is Bayes Discriminant Rule. However Fisher originally proposed
+it with Simple Linear discriminant rule where we find a subspace where 
+the scatter within a class is minimised and separability between two classes is maximised.
+The one mentioned here assumes each class has normal pdf and then apply bayes rule on it.
+
 While logistic regression models the conditional distribution of the response $$
 Y $$ given the predictor(s) $$ X , $$ [linear discriminant
 analysis][glossary-linear-discriminant-analysis] takes the approach of modeling
