@@ -252,6 +252,8 @@ on the "wrong" side of the decision boundary.
 Unfortunately, the conditional distribution of $$ Y $$ given $$ X $$ is often
 unknown, so the Bayes classifier is most often unattainable.
 
+Naive Bayes algorithm is called naive because It makes an assumption that the occurence of a certain feature is independent of other feature, which is not true most of the time. Mathematically All features are independent of each other 
+
 ##### K-Nearest Neighbors
 
 Many modeling techniques try to compute the conditional distribution of $$ Y $$
