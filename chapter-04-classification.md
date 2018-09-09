@@ -150,11 +150,13 @@ handling multiple-class classification.
 
 ### Linear Discriminant Analysis
 
-* _Note_ : There are different classifiers based on discriminate rules. 
+* _Note_ : There are different LDA classifiers based on discriminate rules. 
 The one mentioned below is Bayes Discriminant Rule. However Fisher originally proposed
 it with Simple Linear discriminant rule where we find a subspace where 
 the scatter within a class is minimised and separability between two classes is maximised.
 The one mentioned here assumes each class has normal pdf and then apply bayes rule on it.
+[Bayes-LDA][Bayes-LDA]
+[Fisher-LDA][Fisher-LDA]
 
 While logistic regression models the conditional distribution of the response $$
 Y $$ given the predictor(s) $$ X , $$ [linear discriminant
@@ -513,3 +515,5 @@ analysis.
 [glossary-specificity]: glossary#specificity "stats-learning-notes -- Glossary - Specificity"
 [glossary-z-statistic]: glossary#z-statistic "stats-learning-notes -- Glossary - Z-Statistic"
 [roc-curve]: images/ROC-curve.jpg "Example ROC curve"
+[Fisher-LDA]: https://www.youtube.com/watch?v=azXCzI57Yfc "Fisher LDA"
+[Bayes-LDA]: https://www.youtube.com/watch?v=_m7TMkzZzus "Bayes LDA"
