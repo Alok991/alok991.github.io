@@ -279,8 +279,14 @@ Here we have $$P\left ( sunny\mid yes \right )$$ = 3/9 = 0.33, P(Sunny) = 5/14 =
 Now, $$P\left ( yes\mid sunny \right )$$ = 0.33 * 0.64 / 0.36 = 0.60, which has higher probability.
 
 
-Pros Of Naive Bayes
+## Pros Of Naive Bayes
+* Fast to compute
+* When assumption of independence holds, a Naive Bayes classifier performs better compare to other models like logistic regression and you need less training data.
+* It perform well in case of categorical input variables compared to numerical variable
 
+## Cons of Naive Bayes
+* Unknown category in Test data results in 0 probability also known as zero freq. problem. We can do various smoothing to remove such things. (eg Laplace smoothing)
+* Assumption of independent predictors.
 
 ##### K-Nearest Neighbors
 
